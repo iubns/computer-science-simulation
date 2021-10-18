@@ -15,6 +15,11 @@ const routes: Array<RouteRecordRaw> = [
     // which is lazy-loaded when the route is visited.
     component: () => import("../views/About.vue"),
   },
+  {
+    path: "/gcSimulation",
+    name: "gcSimulation",
+    component: () => import("../views/gcSimulation/index.vue"),
+  },
 ];
 
 const router = createRouter({
